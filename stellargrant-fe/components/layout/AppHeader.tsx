@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { WalletConnect } from "@/components/wallet/WalletConnect";
 
 export function AppHeader() {
   return (
@@ -16,7 +17,7 @@ export function AppHeader() {
         </div>
         <div className="flex items-center gap-4">
           <span className="text-sm px-2 py-1 bg-yellow-100 rounded">Testnet</span>
-          {/* WalletConnect component will be rendered here */}
+          <WalletConnect />
         </div>
       </div>
     </header>
